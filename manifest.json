@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Image Replacer",
+    "version": "1.0",
+
+    "description": "Replace any image on any website with any image of your choice",
+
+    "icons": {
+        "48": "icon48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["imagereplacer.js"]
+        }
+    ]
+}
