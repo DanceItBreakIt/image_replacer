@@ -10,8 +10,9 @@
 
     "browser_action": {
         "default_popup": "popup/menu.html",
+        "default_title": "Image Replacer",
         "default_icon": {
-            "16": "https://raw.githubusercontent.com/DanceItBreakIt/image_replacer/refs/heads/main/button/icon16.png"
+            "16": "icons/icon16.png"
         }
     }
 }
