@@ -1,12 +1,15 @@
 {
+    "description": "Replace any image on any website with any image of your choice",    
     "manifest_version": 2,
-    "name": "Image Replacer",
+    "name": "Image Replacer Menu",
     "version": "1.0",
 
-    "description": "Replace any image on any website with any image of your choice",
+    "web_accessible_resources": [
+        "popup/menu.html"
+    ],
 
     "browser_action": {
-        "default_popup": "menu.htm",
+        "default_popup": "popup/menu.html",
         "default_icon": {
             "16": "https://raw.githubusercontent.com/DanceItBreakIt/image_replacer/refs/heads/main/button/icon16.png"
         }
