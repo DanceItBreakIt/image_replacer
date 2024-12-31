@@ -1,2 +1,4 @@
-let userInput = document.getElementById("save").value;
-localStorage.setItem("userInput", userInput);
+function saveinput() {
+    let userInput = document.getElementById("save").value;
+    localStorage.setItem("userInput", userInput);
+}

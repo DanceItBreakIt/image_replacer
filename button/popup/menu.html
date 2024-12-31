@@ -7,11 +7,18 @@
     <body>
         <h1>Image Replacer</h1>
         <p>replace all <i>(most)</i> images on a webpage<br>with the image of your choice.</p>
-        <form action="saveurl.js">
+        <form action="result.html">
             <label for="inputurl">Image URL:</label>
             <input type="text" id="customurl" name="inputurl">
-            <input type="submit" id="save">
+            <input type="submit" onclick="saveinput()" id="save">
         </form>
         <p>(may not work on some websites)</p>
+        <script>
+            function saveinput() {
+                let userInput = document.getElementById("customurl").value;
+                localStorage.setItem("userInput", userInput);
+                console.log(userInput);
+            }
+        </script>
     </body>
 </html>
